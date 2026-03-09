@@ -10,25 +10,44 @@ const poppins = Poppins({
   weight: ["400", "500", "600", "700"], // Explicitly set weights for Poppins
 });
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
-
 export const metadata: Metadata = {
   title: {
     default: "Doctor On Call Services at Home | 24/7 Medical Care",
     template: "%s | Doctor On Call Mumbai",
   },
+
   description:
-    "Book 24/7 Doctor on Call in Mumbai with fast Doctor at Home service in Bandra Powai and South Mumbai for quick diagnosis treatment and prescription.",
+    "Book 24/7 Doctor on Call in Mumbai with fast Doctor at Home service in Bandra, Powai, and South Mumbai for quick diagnosis, treatment, and prescription.",
+
   icons: {
-    icon: "/icon.png", // any name you want
+    icon: "/icon.png",
+  },
+
+  openGraph: {
+    title: "Doctor On Call Services at Home | 24/7 Medical Care",
+    description:
+      "Book 24/7 Doctor on Call in Mumbai with fast Doctor at Home service in Bandra, Powai, and South Mumbai.",
+    url: "https://yourdomain.com",
+    siteName: "Doctor On Call Mumbai",
+    images: [
+      {
+        url: "/images/left2.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Doctor On Call Services",
+      },
+    ],
+    locale: "en_IN",
+    type: "website",
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title: "Doctor On Call Services at Home | 24/7 Medical Care",
+    description:
+      "Book 24/7 Doctor on Call in Mumbai with fast Doctor at Home service.",
+    images: ["/images/left2.jpg"],
+    creator: "@yourtwitterhandle",
   },
 };
 export default function RootLayout({
