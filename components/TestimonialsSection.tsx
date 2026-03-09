@@ -9,8 +9,14 @@ import { Navigation, Pagination, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-
-const testimonials = [
+type Testimonial = {
+  id: number;
+  name: string;
+  rating: number;
+  text: string;
+  image: string;
+};
+const testimonials: Testimonial[] = [
   {
     id: 1,
     name: "A GHAZAN ALI JHAMRA",
@@ -48,7 +54,7 @@ const testimonials = [
   },
 ];
 
-const renderStars = (rating) => {
+const renderStars = (rating: number) => {
   const stars = [];
 
   for (let i = 1; i <= 5; i++) {
