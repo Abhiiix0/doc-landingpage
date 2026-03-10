@@ -83,7 +83,7 @@ function Card({ card, active }: { card: CardType; active: boolean }) {
       {active && (
         <Image
           src="/images/wpc-card1bg.png"
-          alt=""
+          alt=" card background"
           width={420}
           height={260}
           priority={false}

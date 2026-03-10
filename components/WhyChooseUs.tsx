@@ -55,9 +55,10 @@ const FeatureList = ({
         >
           <Image
             src="/images/icons/tick-Icon.png"
-            alt=""
+            alt="tick-Icon"
             aria-hidden="true"
-            fill
+            height={iconSize}
+            width={iconSize}
             className="object-contain"
           />
         </div>
@@ -160,7 +161,7 @@ export default function WhyChooseUs() {
                 className="h-full w-full object-cover rounded-2xl"
               />
             </div>
-            <div className="ml-34 mt-[-80px] md:mt-[-148px] h-[350px] w-[340px] md:h-[505px] xl:w-[491px] z-10 relative bg-white p-2 border rounded-2xl">
+            <div className="ml-34 mt-[-80px] md:mt-[-148px] h-[250px] w-[240px] xl:h-[350px] xl:w-[340px] 2xl:h-[505px] 2xl:w-[491px] z-10 relative bg-white p-2 border rounded-2xl">
               <Image
                 src={img2.src}
                 alt="Caring medical professional with patient at home"

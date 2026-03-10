@@ -49,7 +49,7 @@ const faqs = [
 ];
 
 export default function FAQ() {
-  const [openId, setOpenId] = useState<number | null>(3);
+  const [openId, setOpenId] = useState<number | null>(1);
 
   const toggle = (id: number) => setOpenId((prev) => (prev === id ? null : id));
 
@@ -62,7 +62,7 @@ export default function FAQ() {
       <div className="absolute left-0 top-0 w-[500px] h-full opacity-25 pointer-events-none">
         <Image
           src="/images/faq-hexabg.png"
-          alt=""
+          alt=" faq background"
           fill
           className="object-cover object-left"
         />
@@ -72,7 +72,7 @@ export default function FAQ() {
       <div className="absolute right-0 top-0 w-[260px] h-full opacity-20 pointer-events-none">
         <Image
           src="/images/faq-hexabg.png"
-          alt=""
+          alt=" faq background"
           fill
           className="object-cover object-right"
         />
@@ -202,7 +202,7 @@ export default function FAQ() {
       </div>
 
       {/* Scrollbar */}
-      <style jsx>{`
+      {/* <style jsx>{`
         .faq-scroll::-webkit-scrollbar {
           width: 5px;
         }
@@ -210,7 +210,7 @@ export default function FAQ() {
           background: rgba(255, 255, 255, 0.3);
           border-radius: 4px;
         }
-      `}</style>
+      `}</style> */}
     </section>
   );
 }
